@@ -9,7 +9,9 @@ class MellowModal {
       this.title = params.title || '';
       this.header = params.header !== undefined ? params.header : true;
       this.footer = params.footer !== undefined ? params.footer : true;
-      this.confirmButton = params.confirmButton !== undefined ? params.confirmButton : true;
+      this.confirmButton = params.showConfirmButton !== undefined ? params.showConfirmButton : true;
+      this.confirmButtonType = params.confirmButtonType !== undefined ? params.confirmButtonType : "success";
+      this.confirmButtonText = params.confirmButtonText !== undefined ? params.confirmButtonText : "Confirm";
       this.content = params.content || '';
       this.animation = params.animation || 'fade';
       this.allowFullscreen = params.allowFullscreen || false;
@@ -36,7 +38,7 @@ class MellowModal {
         modalHeader.classList.add('modal-header');
         modalHeader.innerHTML = `
           <h5 class="modal-title">${this.title}</h5>
-          ${this.showCloseButton ? '<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' : ''}
+          ${this.showCloseButton ? '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' : ''}
         `;
         modalContent.appendChild(modalHeader);
       }
@@ -49,7 +51,7 @@ class MellowModal {
       if (this.footer) {
         const modalFooter = document.createElement('div');
         modalFooter.classList.add('modal-footer');
-        modalFooter.innerHTML = this.confirmButton ? `<button type="button" class="btn btn-primary" id="${this.id}BTN">Confirm</button>` : '';
+        modalFooter.innerHTML = this.confirmButton ? `<button type="button" class="btn btn-${this.confirmButtonType}" id="${this.id}Btn">${this.confirmButtonText}</button>` : '';
         modalContent.appendChild(modalFooter);
       }
   
@@ -67,23 +69,6 @@ class MellowModal {
       }
   
       return modalElement;
-    }
-  
-    bindEvents() {
-      if (this.confirmButton) {
-        const confirmButton = document.getElementById(`${this.id}BTN`);
-        if (confirmButton) {
-          confirmButton.addEventListener('click', () => {
-            this.hide();
-          });
-        }
-      }
-  
-      if (this.autoHide) {
-        this.modal.addEventListener('hidden.bs.modal', () => {
-          this.destroy();
-        });
-      }
     }
   
     fire() {
