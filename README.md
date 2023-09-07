@@ -33,7 +33,21 @@ You can add certain parameters in `JSON` format to design your modals.
 | Parameter  | Type | Default | Detail |
 | ------------- | ------------- | ------------- | ------------- |
 | `id`  | STRING  | `mellowModal` | Lets you specify an `id` for the modal. |
-| `size`  | STRING  | `modal-md`  | Allows you to change the dimensions of the modal. `modal-sm`, `modal-md` or `modal-lg`. Default is `modal-md` |
+| `size`  | STRING  | `modal-md`  | Allows you to change the dimensions of the modal. `modal-sm`, `modal-md` or `modal-lg`. |
+| `backdrop` | BOLEAN | `false` | prevents the modal from closing when clicking outside the modal or pressing the `ESC` key. |
+| `showCloseButton` | BOLEAN | `true` | In the upper right corner of the modal, it shows the close modal button. |
+| `title` | STRING | `null` | Adds a title for the modal. |
+| `header` | BOLEAN | `true` | Shows or hides the Modal Header. Default is `true` |
+| `footer` | BOLEAN | `true` | Shows or hides the Modal Footer. Default is `true` |
+| `showConfirmButton` | BOLEAN | `true` | Adds confirmation button to Modal Footer. Default is `true` |
+| `confirmButtonType` | STRING | `success` | Sets the style of the confirmation button. Check Bootstrap Colors for other styles. |
+| `confirmButtonText` | STRING | `Confirm` | Sets the text of the confirmation button. |
+| `buttons` | STRING | `null` | Adds different buttons to Modal Footer. |
+| `content` | STRING | `null` | Adds HTML format content to Modal Content. |
+| `animation` | STRING | `fade` | Lets you define a custom class for the modal's opening animation. |
+| `allowFullscreen` | BOLEAN | `false` | Starts the modal in full screen. Disables the `size` parameter. |
+| `css` | STRING | `null` | lets you add custom css for the overall modal. |
+
 
 # Parameter Examples
 
