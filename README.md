@@ -27,3 +27,136 @@ modal.fire();
 this way, you can start a quick modal. By default a modal will be initialized.
 
 You can add certain parameters in `JSON` format to design your modals.
+
+# Parameters
+
+```
+modal.fire({
+  /* ... */
+  id : "exampleModal",
+  /* ... */
+});
+```
+Lets you specify an `id` for the modal.
+
+```
+modal.fire({
+  /* ... */
+  size : "modal-lg",
+  /* ... */
+});
+```
+Allows you to change the dimensions of the modal. `modal-sm`, `modal-md` or `modal-lg`. Default is `modal-md`
+```
+modal.fire({
+  /* ... */
+  backdrop : true,
+  /* ... */
+});
+```
+prevents the modal from closing when clicking outside the modal or pressing the `ESC` key. Default is `false`
+```
+modal.fire({
+  /* ... */
+  showCloseButton : true,
+  /* ... */
+});
+```
+In the upper right corner of the modal, it shows the close modal button. Default is `true`
+
+```
+modal.fire({
+  /* ... */
+  title : "Example Modal Title",
+  /* ... */
+});
+```
+Adds a title for the modal.
+
+```
+modal.fire({
+  /* ... */
+  header : true,
+  /* ... */
+});
+```
+Shows or hides the Modal Header. Default is `true`
+```
+modal.fire({
+  /* ... */
+  footer : true,
+  /* ... */
+});
+```
+Shows or hides the Modal Footer. Default is `true`
+
+```
+modal.fire({
+  /* ... */
+  showConfirmButton : true,
+  /* ... */
+});
+```
+Adds confirmation button to Modal Footer. Default is `true`
+```
+modal.fire({
+  /* ... */
+  confirmButtonType : "primary",
+  /* ... */
+});
+```
+Sets the style of the confirmation button. Check Bootstrap Colors for other styles. Default `success`
+
+```
+modal.fire({
+  /* ... */
+  confirmButtonText : "Save",
+  /* ... */
+});
+```
+Sets the text of the confirmation button. Default `Confirm`
+
+```
+modal.fire({
+  /* ... */
+  buttons : "<button type="button" class="btn btn-primary">Primary</button>",
+  /* ... */
+});
+```
+Adds different buttons to Modal Footer.
+
+```
+modal.fire({
+  /* ... */
+  content : '<p>This is the content of the modal.</p>',
+  /* ... */
+});
+```
+Adds HTML format content to Modal Content.
+
+```
+modal.fire({
+  /* ... */
+  animation : 'custom-animation-class',
+  /* ... */
+});
+```
+Lets you define a custom class for the modal's opening animation. Default `Fade`
+
+```
+modal.fire({
+  /* ... */
+  allowFullscreen : true,
+  /* ... */
+});
+```
+Starts the modal in full screen. Disables the `size` parameter. Default `false`
+
+```
+modal.fire({
+  /* ... */
+  css : 'background:red',
+  /* ... */
+});
+```
+lets you add custom css for the overall modal.
