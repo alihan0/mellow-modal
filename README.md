@@ -30,6 +30,8 @@ You can add certain parameters in `JSON` format to design your modals.
 
 # Parameters
 
+
+Lets you specify an `id` for the modal.
 ```
 modal.fire({
   /* ... */
@@ -37,8 +39,6 @@ modal.fire({
   /* ... */
 });
 ```
-Lets you specify an `id` for the modal.
-
 ------------------------------------------
 ```
 modal.fire({
