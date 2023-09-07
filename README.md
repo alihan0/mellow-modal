@@ -16,3 +16,14 @@ or you can add the library directly to your project.
 ```
 <script src="/path/your/folder/mellow-modal.js"></script>
 ```
+
+# Usage
+
+Mellow Modal is very easy to start. You can init with a single command
+```
+const modal = new MellowModal;
+modal.fire();
+```
+this way, you can start a quick modal. By default a modal will be initialized.
+
+You can add certain parameters in `JSON` format to design your modals.
