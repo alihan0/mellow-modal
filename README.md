@@ -40,6 +40,9 @@ modal.fire({
 });
 ```
 ------------------------------------------
+
+Allows you to change the dimensions of the modal. `modal-sm`, `modal-md` or `modal-lg`. Default is `modal-md`
+
 ```
 modal.fire({
   /* ... */
@@ -47,9 +50,10 @@ modal.fire({
   /* ... */
 });
 ```
-Allows you to change the dimensions of the modal. `modal-sm`, `modal-md` or `modal-lg`. Default is `modal-md`
-
 ------------------------------------------
+
+prevents the modal from closing when clicking outside the modal or pressing the `ESC` key. Default is `false`
+
 ```
 modal.fire({
   /* ... */
@@ -57,9 +61,10 @@ modal.fire({
   /* ... */
 });
 ```
-prevents the modal from closing when clicking outside the modal or pressing the `ESC` key. Default is `false`
-
 ------------------------------------------
+
+In the upper right corner of the modal, it shows the close modal button. Default is `true`
+
 ```
 modal.fire({
   /* ... */
@@ -67,9 +72,10 @@ modal.fire({
   /* ... */
 });
 ```
-In the upper right corner of the modal, it shows the close modal button. Default is `true`
-
 ------------------------------------------
+
+Adds a title for the modal.
+
 ```
 modal.fire({
   /* ... */
@@ -77,9 +83,10 @@ modal.fire({
   /* ... */
 });
 ```
-Adds a title for the modal.
-
 ------------------------------------------
+
+Shows or hides the Modal Header. Default is `true`
+
 ```
 modal.fire({
   /* ... */
@@ -87,9 +94,10 @@ modal.fire({
   /* ... */
 });
 ```
-Shows or hides the Modal Header. Default is `true`
-
 ------------------------------------------
+
+Shows or hides the Modal Footer. Default is `true`
+
 ```
 modal.fire({
   /* ... */
@@ -97,9 +105,10 @@ modal.fire({
   /* ... */
 });
 ```
-Shows or hides the Modal Footer. Default is `true`
-
 ------------------------------------------
+
+Adds confirmation button to Modal Footer. Default is `true`
+
 ```
 modal.fire({
   /* ... */
@@ -107,9 +116,10 @@ modal.fire({
   /* ... */
 });
 ```
-Adds confirmation button to Modal Footer. Default is `true`
-
 ------------------------------------------
+
+Sets the style of the confirmation button. Check Bootstrap Colors for other styles. Default `success`
+
 ```
 modal.fire({
   /* ... */
@@ -117,9 +127,10 @@ modal.fire({
   /* ... */
 });
 ```
-Sets the style of the confirmation button. Check Bootstrap Colors for other styles. Default `success`
-
 ------------------------------------------
+
+Sets the text of the confirmation button. Default `Confirm`
+
 ```
 modal.fire({
   /* ... */
@@ -127,9 +138,10 @@ modal.fire({
   /* ... */
 });
 ```
-Sets the text of the confirmation button. Default `Confirm`
-
 ------------------------------------------
+
+Adds different buttons to Modal Footer.
+
 ```
 modal.fire({
   /* ... */
@@ -137,9 +149,10 @@ modal.fire({
   /* ... */
 });
 ```
-Adds different buttons to Modal Footer.
-
 ------------------------------------------
+
+Adds HTML format content to Modal Content.
+
 ```
 modal.fire({
   /* ... */
@@ -147,9 +160,10 @@ modal.fire({
   /* ... */
 });
 ```
-Adds HTML format content to Modal Content.
-
 ------------------------------------------
+
+Lets you define a custom class for the modal's opening animation. Default `Fade`
+
 ```
 modal.fire({
   /* ... */
@@ -157,9 +171,10 @@ modal.fire({
   /* ... */
 });
 ```
-Lets you define a custom class for the modal's opening animation. Default `Fade`
-
 ------------------------------------------
+
+Starts the modal in full screen. Disables the `size` parameter. Default `false`
+
 ```
 modal.fire({
   /* ... */
@@ -167,9 +182,10 @@ modal.fire({
   /* ... */
 });
 ```
-Starts the modal in full screen. Disables the `size` parameter. Default `false`
-
 ------------------------------------------
+
+lets you add custom css for the overall modal.
+
 ```
 modal.fire({
   /* ... */
@@ -177,4 +193,3 @@ modal.fire({
   /* ... */
 });
 ```
-lets you add custom css for the overall modal.
