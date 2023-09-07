@@ -32,8 +32,8 @@ You can add certain parameters in `JSON` format to design your modals.
 
 | Parameter  | Type | Default | Detail |
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| `id`  | STRING  | `mellowModal` | Lets you specify an `id` for the modal. |
+| `size`  | STRING  | `modal-md`  | Allows you to change the dimensions of the modal. `modal-sm`, `modal-md` or `modal-lg`. Default is `modal-md` |
 
 # Parameter Examples
 
