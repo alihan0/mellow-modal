@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mellow Modal Example</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<button onclick="openModal()">Open Mellow Modal</button>
+
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./mellow-modal.js"></script>
+<script>
+  function openModal() {
+    const modal = new MellowModal({
+      id: 'exampleModal',
+      size: 'modal-md',
+      title: 'Mellow Modal Example',
+      content: '<p>This is the content of the modal.</p>',
+      backdrop: 'static',
+      showCloseButton: true,
+      header: true,
+      footer: true,
+      confirmButton: true,
+      animation: 'fade',
+      allowFullscreen: false,
+      css: '',
+      autoHide: false
+    });
+    modal.fire();
+  }
+</script>
+
+</body>
+</html>
