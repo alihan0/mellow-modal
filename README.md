@@ -30,7 +30,10 @@ You can add certain parameters in `JSON` format to design your modals.
 
 # Parameters
 
-| Parameter | Type | Default | Detail |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 # Parameter Examples
 
