@@ -26,13 +26,14 @@
       showCloseButton: false,
       header: true,
       footer: true,
-      showConfirmButton: true,
+      showConfirmButton: false,
       confirmButtonType : 'warning',
       confirmButtonText : 'Kaydet',
       animation: 'fade',
       allowFullscreen: false,
       css: '',
-      autoHide: false
+      autoHide: false,
+      buttons : '<button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-primary">Primary</button>'
     });
     modal.fire();
   }

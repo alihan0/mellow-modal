@@ -12,6 +12,7 @@ class MellowModal {
       this.confirmButton = params.showConfirmButton !== undefined ? params.showConfirmButton : true;
       this.confirmButtonType = params.confirmButtonType !== undefined ? params.confirmButtonType : "success";
       this.confirmButtonText = params.confirmButtonText !== undefined ? params.confirmButtonText : "Confirm";
+      this.buttons = params.buttons !== undefined ? params.buttons : '';
       this.content = params.content || '';
       this.animation = params.animation || 'fade';
       this.allowFullscreen = params.allowFullscreen || false;
@@ -51,7 +52,7 @@ class MellowModal {
       if (this.footer) {
         const modalFooter = document.createElement('div');
         modalFooter.classList.add('modal-footer');
-        modalFooter.innerHTML = this.confirmButton ? `<button type="button" class="btn btn-${this.confirmButtonType}" id="${this.id}Btn">${this.confirmButtonText}</button>` : '';
+        modalFooter.innerHTML = this.confirmButton ? `${this.buttons} <button type="button" class="btn btn-${this.confirmButtonType}" id="${this.id}Btn">${this.confirmButtonText}</button>` : `${this.buttons}`;
         modalContent.appendChild(modalFooter);
       }
   
