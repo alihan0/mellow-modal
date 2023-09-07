@@ -28,6 +28,10 @@ this way, you can start a quick modal. By default a modal will be initialized.
 
 You can add certain parameters in `JSON` format to design your modals.
 
+# Parameters
+
+| Parameter | Type | Default | Detail|
+
 # Parameter Examples
 
 
