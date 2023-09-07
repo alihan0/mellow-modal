@@ -17,7 +17,6 @@ class MellowModal {
       this.animation = params.animation || 'fade';
       this.allowFullscreen = params.allowFullscreen || false;
       this.css = params.css || '';
-      this.autoHide = params.autoHide || false;
   
       this.modal = null;
     }
