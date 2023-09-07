@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mellow","modal","mellow-modal","bootstrap","bootstrap-modal","modal-fire","modal-init","create-modal"],
+  "author": "Alihan Öztürk",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.3.1"
   }

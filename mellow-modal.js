@@ -81,8 +81,7 @@ class MellowModal {
   
       const modal = new bootstrap.Modal(this.modal, options);
       modal.show();
-  
-      this.bindEvents();
+
     }
   
     hide() {
@@ -96,4 +95,3 @@ class MellowModal {
   }
   
   module.exports = MellowModal;
-  
