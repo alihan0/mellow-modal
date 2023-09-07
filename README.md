@@ -1,4 +1,4 @@
-# mellow-modal
+# Mellow Modal
 
 Hello everyone,
 Mellow Modal is a modal creation tool. On advanced systems, it makes more sense in terms of performance to recreate the bootstrap modals in the DOM instead of constantly adding them to the page. But it takes a lot of code to create a modal every time, and it's really cumbersome.
