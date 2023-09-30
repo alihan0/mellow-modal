@@ -4,7 +4,7 @@ class MellowModal {
     constructor(params) {
       this.id = params.id || 'mellowModal';
       this.size = params.size || 'modal-md';
-      this.backdrop = params.backdrop || false;
+      this.backdrop = params.backdrop || true;
       this.showCloseButton = params.showCloseButton || true;
       this.title = params.title || '';
       this.header = params.header !== undefined ? params.header : true;
@@ -25,6 +25,7 @@ class MellowModal {
       const modalElement = document.createElement('div');
       modalElement.classList.add('modal', this.animation);
       modalElement.setAttribute('id', this.id);
+      modalElement.setAttribute('id', this.id);
   
       const modalDialog = document.createElement('div');
       modalDialog.classList.add('modal-dialog', this.size);
@@ -38,9 +39,17 @@ class MellowModal {
         modalHeader.classList.add('modal-header');
         modalHeader.innerHTML = `
           <h5 class="modal-title">${this.title}</h5>
-          ${this.showCloseButton ? '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' : ''}
+          ${this.showCloseButton ? '<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>' : ''}
         `;
         modalContent.appendChild(modalHeader);
+
+         if (this.header && this.showCloseButton) {
+          const closeButton = modalHeader.querySelector('.btn-close');
+
+          closeButton.addEventListener('click', () => {
+            this.destroy();
+          });
+        }
       }
   
       const modalBody = document.createElement('div');
@@ -89,8 +98,9 @@ class MellowModal {
     }
   
     destroy() {
-      this.modal.remove();
+      const modal = document.getElementById(this.id);
+      modal.remove();
     }
   }
   
-  module.exports = MellowModal;
+module.exports = MellowModal;
