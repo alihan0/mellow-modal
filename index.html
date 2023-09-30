@@ -1,36 +1,37 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mellow Modal Example</title>
+  <title>Mellow Modal</title>
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+  
+<button onclick="openButton()">Open Mellow Button</button>
 
-<button onclick="openModal()">Open Mellow Modal</button>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./mellow-modal.js"></script>
 
-
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./mellow-modal.js"></script>
-<script>
-  function openModal() {
-    const modal = new MellowModal({
-      id: 'exampleModal',
-      title: 'Mellow Modal Example',
-      content: '<p>This is the content of the modal.</p>',
-    });
-    modal.fire();
-
-    
-
-  }
-
-  document.getElementById('exampleModalBtn').addEventListener("click", alert())
-
-</script>
-
+  <script>
+    function openButton(){
+      const modal = new MellowModal({
+        id: "mellowModal",
+        size : "modal-md",
+       // backdrop: "static",
+       title: "New Mellow Modal",
+       header: true,
+       footer: true,
+       content: '<p>This is a Mellow Modal content</p>',
+       allowFullscreen: false,
+       buttons: '<button class="btn btn-primary">Test</button>',
+       showConfirmButton: true,
+       confirmButtonType: 'danger',
+       confirmButtonText: "Mistake!"
+      });
+      modal.fire();
+    }
+  </script>
+  
 </body>
 </html>
